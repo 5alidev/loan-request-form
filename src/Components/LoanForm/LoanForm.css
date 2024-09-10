@@ -1,0 +1,79 @@
+#myForm {
+  width: 45%;
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.7rem 1.3rem;
+  border-radius: 0.8rem;
+  box-shadow: 0px 8px 10px #17171763;
+}
+
+.name-input-container,
+.phone-input-container,
+.age-input-container,
+.employee-check-input-container,
+.salary-input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input,
+select {
+  padding: 0.8rem 1.2rem;
+  outline: none;
+  background-color: #1c1c1c;
+  border: 1px solid #616161;
+  border-radius: 0.5rem;
+  color: #eeeeee;
+  width: 100%;
+}
+
+input:focus-within,
+select:focus-within {
+  border-color: #cecece;
+}
+
+label {
+  color: #cecece;
+  font-size: 0.9rem;
+}
+
+.name-input,
+.phone-input,
+.age-input,
+.salary-input {
+  width: 70%;
+}
+
+.submit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-container button {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  outline: none;
+  background-color: #eeeeee;
+  border-radius: 0.5rem;
+  color: #1c1c1c;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.submit-container button:hover {
+  background-color: #d65a31;
+  color: #eeeeee;
+  transform: translateY(4px);
+}
+
+.submit-container button:disabled {
+  background-color: #a2a2a2;
+  cursor: not-allowed;
+}

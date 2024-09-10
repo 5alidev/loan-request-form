@@ -1,0 +1,53 @@
+/* #0D111D */
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d111d92;
+}
+
+.modal {
+  width: 35%;
+  padding: 1rem 1.2rem;
+  background-color: #aaabaf;
+  border-radius: 0.7rem;
+  color: #171717;
+  box-shadow: 2px 5px 10px #171717b0;
+  animation: slide-down 0.5s ease forwards;
+}
+
+.modal p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  border: solid 2px #c7253e;
+  color: #a02334;
+}
+
+.success {
+  border: solid 2px #0d7c66;
+  color: #557c56;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+}
